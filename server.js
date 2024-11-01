@@ -21,6 +21,7 @@ const server = http.createServer(async (req, res) => {
         if (undermaintain) {
             filepath = path.join(publicDir, 'maintain.html');
             res.setHeader('Content-Type', 'text/html');
+            break;
         } else if (req.url === '/') {
             filepath = path.join(publicDir, 'index.html');
             res.setHeader('Content-Type', 'text/html');
