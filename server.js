@@ -15,7 +15,7 @@ const imageDir = path.join(__dirname , 'public' , 'images');
 
 const server = http.createServer(async (req, res) => {
     try {
-        const undermaintain = true;
+        const undermaintain = false;
         let filepath;
 
         if (undermaintain) {
