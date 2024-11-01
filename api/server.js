@@ -10,12 +10,12 @@ const __dirname = path.dirname(__filename);
 console.log(__filename, __dirname);
 
 const PORT = 8000;
-const publicDir = path.join(__dirname, 'public');
-const imageDir = path.join(__dirname , 'public' , 'images');
+const publicDir = path.join(process.cwd(),  'public');
+const imageDir = path.join(process.cwd() , 'public' , 'images');
 
 const server = http.createServer(async (req, res) => {
     try {
-        const undermaintain = true;
+        const undermaintain = process.env.UNDER_MAINTAIN === 'true';
         let filepath;
 
         if (undermaintain) {
