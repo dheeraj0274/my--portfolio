@@ -15,12 +15,11 @@ const imageDir = path.join(process.cwd() , 'public' , 'images');
 
 const server = http.createServer(async (req, res) => {
     try {
-        const undermaintain = process.env.UNDER_MAINTAIN = true;
+        const undermaintain = process.env.UNDER_MAINTAIN ==='true';
         let filepath;
 
         if (undermaintain) {
-            filepath = path.join(
-                 'index.html');
+            filepath = path.join(publicDir , 'maintain.html');
             res.setHeader('Content-Type', 'text/html');
         
         } else if (req.url === '/') {
