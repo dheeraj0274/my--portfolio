@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" >
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- <script src="port.js" type="text/javascript"></script> -->
+  
+  
+</script> 
+ 
+ 
+ 
+  </head>
+  
+
+  <body id="body">
+    <nav class="navbar">
+      <div class="theme-toggle">
+        <button class="theme-toggle-button" aria-label="Toggle theme">
+          <span class="theme-icon sun-icon">☀️</span>
+            <span class="theme-icon moon-icon">🌙</span>
+        </button>
+        <div class="dropdown-content" id="themeDropdown">
+          <button onclick="setTheme('light')">☀️ Light Mode</button>
+          <button onclick="setTheme('dark')">🌙 Dark Mode</button>
+        </div>
+      </div>
+        
+
+
+      <input  type="checkbox" id="check">
+      <label for="check">
+        <i class="fa fa-bars" aria-hidden="true" id="btn"></i>
+        <i class="fa fa-times" aria-hidden="true" id="cancel"></i>
+    
+
+      </label>
+     
+
+       
+     
+        <ul class="menu" id="menu">
+          <!-- <i class="material-icons" style="font-size:36px">apps</i> -->
+            
+          <li >
+            <a href="#home" class="menu-btn" id="menu-btns"><strong>Home</strong></a>
+          </li>
+          <li>
+            <a href="#about" class="menu-btn"  id="menu-btns"><strong>About</strong></a>
+          </li>
+          <li>
+            <a href="#skills" class="menu-btn"  id="menu-btns"><strong>Skills</strong></a>
+          </li>
+          <li>
+            <a href="#projects" class="menu-btn"  id="menu-btns"><strong>Projects</strong></a>
+          </li>
+          <li>
+            <a href="#contact" class="menu-btn"  id="menu-btns"><strong>Contact</strong></a>
+          </li>
+        </ul>
+     
+    </nav>
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="text1">Hello, this is</div>
+            <div class="text2">Dheeraj Yadav</div>
+            <div class="text3">And I'm a<span class="typing"></span></div>
+            
+        </div>
+       
+
+    </section>
+
+   <!-- about section start -->
+    <section class="about" id="about">
+     
+      
+      
+
+     <div class="about-me">
+      <div class="top" id="top">
+        <span onclick="ScrolltoTop()">
+       <i class='bx bxs-up-arrow-circle'></i>
+      </span>
+      </div>
+      
+    
+        
+        
+ 
+      
+      <div class="column-left">
+        <img  alt="" src="">
+      </div>
+      <div class="column-right">
+        <div class="headline"><h6>About me</h6></div>
+        
+        <p class="text">Hi,  I'm <strong>Dheeraj Yadav</strong> , a Btech-CSE student<br>
+          Currently I am pursuing Btech degree in Kiet College situated in Delhi-NCR.<br>
+          Web & App developments are the field in which I feel comfortable.
+
+
+        </p>
+
+
+
+
+      </div>
+    </div>
+    </section>
+
+
+    <!-- skills ssection start -->
+     <section class="skills" id="skills">
+    <div class="title">
+      <h2 >My Skills</h2>
+      <div class="skillTitle"></div>
+    </div>
+      <div class="skill-container">
+      <div class="skill-cont">
+        <div class="card glow">
+            <img  alt="html" src="html.png">
+            <h5>HTML</h5>
+          
+        </div>
+        <div class="card glow">
+            <img  alt="html" src="css.png">
+            <h5>CSS</h5>
+          
+        </div>
+
+        <div class="card glow">
+            <img  alt="html" src="js.png">
+            <h5>JAVASCRIPT</h5>
+        </div>
+
+        <div class="card glow">
+          <img class="react"  alt="html" src="react3.png">
+          <h5>REACT</h5>
+      </div>
+
+      <div class="card glow">
+        <img  class="node" alt="html" src="nodejs-png-nodejs-icon-png-50-px-1600.png">
+        <h5>Node JS</h5>
+    </div>
+
+    <div class="card glow">
+      <img  class="mongo" alt="html" src="MongoDB-Logo.png">
+      <h5>MongoDB</h5>
+  </div>
+
+
+      </div>
+    </div>
+        </section>
+
+
+
+
+    <section class="projects" id="projects">
+      
+      <div class="header"><h1>My Projects</h1>
+      <div class="titleh"></div>
+    </div>
+
+
+      <div class="project-container">
+
+      <div class="project-card">
+        <div class="img-container">
+        <img alt="img" class="drum" src="drum.jpeg">
+      </div>
+        <div class="project-cont">
+        <p class="about-project">A fun and Responsive Musical Drum Kit</p>
+        <h3>Drum Kit</h3>
+        <div class="checkBtn">
+        <a href="https://dheeraj0274.github.io/drumKIT/" target="_blank" class="btn" >Check it Out</a>
+      </div>
+       </div>
+      </div>
+
+
+
+      <div class="project-card">
+        <div class="img-container">
+        <img class="game" src="game.png">
+      </div>
+        <div class="project-cont">
+        <p class="about-project">It is a game of guessing a number</p>
+        <h3>Guess A number</h3>
+        <div class="checkBtn">
+        <a href="https://first-game-six.vercel.app/" class="btn" target="_blank" >Check it Out</a>
+      </div>
+      </div>
+      </div>
+
+
+      <div class="project-card">
+        <div class="img-container">
+        <img class="radar" src="radar.png">
+      </div>
+        <div class="project-cont">
+        <p class="about-project">This is a real-time Weather at your Fingertips</p>
+        <h3>Weather App</h3>
+        <div class="checkBtn">
+        <a href="https://my-radar-eight.vercel.app/" class="btn" target="_blank" >Check it Out</a>
+      </div>
+      </div>
+      </div>
+
+
+
+
+      <div class="project-card">
+     <div class="img-container">
+        <img class="mortgage" src="mortgage.jpeg">
+      </div>
+        <div class="project-cont">
+        <p class="about-project">A Simple and Accurate Mortgage Calculator</p>
+        <h3>Mortgage-Cal</h3>
+        <div class="checkBtn">
+        <a class="btn" target="_blank" >Check it Out</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="project-card">
+        <div class="img-container">
+        <img class="namo" src="namo.png">
+      </div>
+        <div class="project-cont">
+        <p class="about-project">My first project dedicated to Honarable PM Modi</p>
+        <h3>About NaMo</h3>
+        <div class="checkBtn">
+        <a href="https://dheeraj0274.github.io/-Prime-Minister/" class="btn" target="_blank" >Check it Out</a>
+      </div>
+    </div> 
+      </div>
+
+
+
+
+        <div class="project-card">
+          <img class="stopT" src="stop-timer.png">
+          <div class="project-cont">
+          <p class="about-project">This projects is a fully functional timer clock</p>
+          <h3>Timer-Clock</h3>
+          <div class="checkBtn">
+          <a href="https://timer-clock-ruby.vercel.app/" class="btn" target="_blank" >Check it Out</a>
+        </div>
+        </div>
+        </div>
+
+      </div>
+
+        </div>
+   
+      </div>
+     </section>
+
+
+
+     <section class="contact"   id="contact">
+
+    <!-- <div class="headline-cont"> -->
+      <div class="header">
+      <h3 class="title-cont"><span class="title-span">Contact Me</span></h3>
+       <div class="contact-pseudo"></div>
+      </div>
+    
+    
+    <!-- </div> -->
+
+    
+    <div class="contact-content">
+     
+      <div class="contact-form">
+        <h3 class="form-title">Send Me Message</h3>
+        <form action="" class="action" id="action">
+          <fieldset>
+            <div class="form-field">
+              <input type="name" id="name" placeholder="your name">
+            </div>
+            <div class="form-field">
+              <input type="email" id="email" placeholder="your email" class="email">
+            </div>
+            <div class="form-field">
+              <input type="address" id="subject" placeholder="subject">
+            </div>
+            <div class="form-field">
+              <textarea name="Message" id="Message" placeholder="Your message">
+                
+              </textarea>
+            </div>
+          </fieldset>
+          <form type="submit">
+            
+          <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+            <div class="alt-send-button">
+              <i class="fa fa-paper-plane"></i><span class="send-text" >SEND</span>
+            </div>
+          
+          </button>
+        </form>
+          
+            
+        </form>
+      </div>
+
+
+      <div class="contact-info">
+        <h3>Email me at</h3>
+        <a href=""><p>dy911848@gmail.com</p></a>
+        <p class="apps">Find me on</p>
+        <div class="contact-links">
+          <ul class="socialmedia-list">
+
+          <li><a href="https://www.instagram.com/dy990_1/?__pwa=1" ><i class='bx bxl-instagram'  ></i></a></li>
+          <li><a><i class='bx bxl-twitter' ></i></a></li>
+          <li><a  href="https://github.com/dheeraj0274"><i class='bx bxl-github' ></i></a></li>
+          <li><a href="https://www.linkedin.com/in/dheeraj-yadav-b0535b247/"><i class='bx bxl-linkedin-square' ></i></a></li>
+        </ul>
+        </div>
+      </div>
+
+     
+    </div>
+    <div class="main-footer">
+    <div class="footer">
+      <p>Developed by
+      <a>@dheeraj</a></p>
+      <p class="right"> &copy; All Right Reserved</p>
+     
+    </div>
+    <div class="updated"><p>Last updated:<strong>28-10-24</strong></p></div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+   
+  
+
+
+        
+
+      
+      
+    
+      
+
+
+
+
+
+
+    
+
+
+
+
+  <script src="port.js" type="text/javascript"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   
+  </body>
+</html>
