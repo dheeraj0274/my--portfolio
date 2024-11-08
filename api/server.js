@@ -15,7 +15,7 @@ const imageDir = path.join(process.cwd() , 'public' , 'images');
 
 const server = http.createServer(async (req, res) => {
     try {
-        const undermaintain = process.env.UNDER_MAINTAIN = false;
+        const undermaintain = process.env.UNDER_MAINTAIN === 'false';
         let filepath;
 
         if (undermaintain) {
@@ -35,10 +35,10 @@ const server = http.createServer(async (req, res) => {
             filepath = path.join(imageDir , req.url);
             res.setHeader('Content-Type' , 'image/jpeg')
         }
-        else if(req.url.endsWith('.png')){
-            filepath = path.join(imageDir , req.url);
-            res.setHeader('Content-Type' , 'image/png')
-        }
+        // else if(req.url.endsWith('.png')){
+        //     filepath = path.join(imageDir , req.url);
+        //     res.setHeader('Content-Type' , 'image/png')
+        // }
         else if (req.url === '/port.js') {
             filepath = path.join(publicDir, 'port.js');
             res.setHeader('Content-Type', 'text/javascript'); 
